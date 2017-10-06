@@ -1,65 +1,38 @@
-# The main config file for your Jekyll template
-
-# Site settings
-title: Ryan Fonzi               # used for the html title of every page
-desc: >
+# Profile information
+name: Ryan Fonzi
+title: Ryan Fonzi - Android Dev
+description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+permalink: ':title/'
+baseurl:  # the subpath of your site, e.g. /blog
+url: "rfonzi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+projectsurl: "/projects"
 
-url:      # put your website hosting url here
-baseurl: ''                 # the subpath of your site, e.g. /blog
-permalink: /:year/:title/   # how should we display posts url
+# Social
+facebook: #Add your Facebook
+twitter: #Add your Twitter
+google-plus: #Add your Google+
+github: "RFonzi"
+linkedin: "ryan-fonzi-9b5039138"
 
-# Meta settings
-email: ryan.fonzi@gmail.com
-author: Ryan Fonzi
-twitter_username:
-github_username: RFonzi
-github_source:
+# Contact form
+email: "ryan.fonzi@gmail.com"
 
-# Put your ga tracking code below
-google_analytics: 'UA-XXXXXXXX-X'
+# Comments
+discus-identifier: # Add your Disqus identifier
 
-# Pagination settings
-paginate: 5                           # number of posts to show per page
-paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf as is
-
-# Navigation settings
-# Used to define the navigation menu items
-# > Title is the tile of the navigation item, url the url and desc is the tooltip
-navigation:
-  - title: Projects
-    url: /projects/
-    desc: Stuff I've done/am doing
-  - title: Work
-    url: /work/
-    desc: Work stuff
-  - title: About
-    url: /about/
-    desc: Where I'm supposed to brag about things
-
-# Used by Jekyll to recognize what is a post and what is a page
-defaults:
-  -
-    scope:
-      path: ''
-      type: posts
-    values:
-      layout: post
-
-# Markdown parser settings
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false          # you can change this if you feel like it
-  parse_block_html: true    # allow parsing html inside markdown
+# Paginate
+paginate: 5
+paginate_path: /projects/page:num/
 
 # Build settings
-include:
-  - _pages                  # all your pages can be put inside pages (except articles)
-exclude:
-  - README.md
-  - vendor
+markdown: kramdown
 gems:
+  - jekyll-feed
   - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+include: [_pages]

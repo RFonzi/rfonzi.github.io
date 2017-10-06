@@ -1,0 +1,20 @@
+<aside class="sidebar">
+
+  <div class="sidebar-container">
+    <div class="sidebar-logo">
+      <a href="{{site.baseurl}}/" class="logo">{% if site.name %}{{site.name}}{% else %}Fresh{% endif %}</a>
+    </div>
+
+    <menu class="sidebar-menu">
+      <li class="menu-items"><a class="menu-links" href="{{site.baseurl}}/">Home</a></li>
+      <li class="menu-items"><a class="menu-links" href="{{site.projectsurl}}/">Projects</a></li>
+    </menu>
+
+    <div class="sidebar-social">
+      <li class="social-items"><a href="https://github.com/{{site.github}}" class="social-links"><i class="social-icons fa fa-github" aria-hidden="true"></i></a></li>
+      <li class="social-items"><a href="https://www.linkedin.com/in/{{site.linkedin}}" class="social-links"><i class="social-icons fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+      <li class="social-items"><a href="mailto:{{site.email}}" class="social-links"><i class="social-icons fa fa-envelope" aria-hidden="true"></i></a></li>
+    </div>
+
+  </div>
+</aside>
