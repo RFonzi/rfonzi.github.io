@@ -909,9 +909,8 @@ pre code {
   text-decoration: none;
 }
 .main-article .post-date span, .main-article .page-date span, .page-article .post-date span, .page-article .page-date span, .post .post-date span, .post .page-date span {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-family: monospace;
+  font-size: 0.9rem;
+  font-family: 'Source Code Pro', monospace;
   color: #63845f;
 }
 .main-article .more, .page-article .more, .post .more {
