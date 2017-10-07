@@ -23,9 +23,9 @@ html {
 }
 
 body {
-  color: #212121;
+  color: #e7e7e7;
   margin: 0;
-  background-color: #ecf3f3;
+  background-color: #303030;
 }
 
 img {
@@ -77,7 +77,7 @@ pre {
 
 // Sidebar
 .sidebar {
-  background-color: #1e1a23;
+  background-color: #201d25;
   position: fixed;
   top: 0;
   left: 0;
@@ -104,7 +104,7 @@ pre {
     transition: all .35s;
     &:hover {
       transform: translateY(3px);
-      background-color: #63845f;
+      background-color: #59995d;
       color: #515151;
     }
   }
@@ -121,7 +121,7 @@ pre {
 .sidebar-logo {
   .logo {
     font-family: 'Noto Sans', sans-serif;
-    color: #63845f;
+    color: #59995d;
     text-decoration: none;
     font-size: 2.7rem;
     font-weight: 700;
@@ -158,20 +158,22 @@ pre {
 
 .main-article, .page-article, .post {
   margin-bottom: 6rem;
-  box-shadow: 0px 50px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
   .header-article, .page-header {
     text-align: center;
     margin-bottom: 1rem;
   }
   .wrap-content {
-    background-color: #fff;
+    background-color: #424242;
+    border-radius: 4px;
     padding: 1rem;
   }
   .title-article, .page-title, .post-title {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
     transition: all .3s;
-    color: #63845f;
+    color: #e7e7e7;
     font-size: 2.5rem;
     margin-top: 0.67rem;
     a {
@@ -183,7 +185,7 @@ pre {
     span {
       font-size: 0.9rem;
       font-family: 'Source Code Pro', monospace;
-      color: #63845f;
+      color: #a8a8a8;
     }
   }
   .more {
@@ -199,7 +201,7 @@ img.post-image, img.page-img {
 .page-content {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #595959;
 }
 
 // Pagination
