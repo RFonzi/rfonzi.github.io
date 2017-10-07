@@ -1,10 +1,8 @@
 # Profile information
 name: Ryan Fonzi
-title: Ryan Fonzi - Android Dev
+title: Ryan Fonzi
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Ryan Fonzi's personal website
 permalink: ':title/'
 baseurl:  # the subpath of your site, e.g. /blog
 url: "rfonzi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
