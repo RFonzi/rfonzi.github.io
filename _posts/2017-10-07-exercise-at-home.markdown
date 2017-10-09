@@ -3,7 +3,7 @@ layout: post
 title:  Exercise At Home
 date:   2017-10-07
 img: ic_exerciseathome.png
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+description: Exercise At Home is an Android app designed to give patients who need physical therapy the motivation they need to stick with their regimen.
 categories: projects
 ---
 
@@ -28,7 +28,7 @@ We brainstormed and came up with a couple potential solutions. Patients saw the 
 There are two components to Exercise At Home.
 
 #### Web
-The website, hosted at [exerciseathome.co](https://www.exerciseathome.co) (or it would be if the site was still up :cry:) acts as both an admin portal designed for therapists to view patient progress, and a domain for our REST endpoints that the mobile app can access.
+The website, hosted at [exerciseathome.co](https://www.exerciseathome.co) (site went down :cry:) acts as both an admin portal designed for therapists to view patient progress, and a domain for our REST endpoints that the mobile app can access.
 
 #### Mobile
 The mobile app is an Android client for patients that provides useful stat tracking and digital incentives to exercise. Each time a patient exercises with the app, they'll get points they can spend, and experience to level them up. Consistently exercising awards streaks that increase the amount of points they end up getting. We also award badges after certain events (Complete your first exercise, Get a 3-exercise streak, etc.) to  act as a patient's achievements. Points are spent on themes, which allow patients to reskin most of the app to their liking.
@@ -45,4 +45,6 @@ I gradually took charge of design for both the presentation layer and parts of t
 The app follows an MVP architecture with various interactors and repositories to fulfill use cases. We also employ drop-in strategies for the sensor measurements utilizing different combinations of sensors to help work around <sup><sub><sub>Samsung</sub></sub></sup> phones with absent or wonky accelerometers or gyroscopes.
 
 ## Retrospective
- This was the first _real_ Android app I've worked on, and around the same time I was reading into [architectural](https://en.wikipedia.org/wiki/Architectural_pattern) [design](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) [patterns](https://en.wikipedia.org/wiki/Software_design_pattern) on [Android](https://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/).
+ This was the first _real_ Android app I've worked on, and around the same time I was reading into [architectural](https://en.wikipedia.org/wiki/Architectural_pattern) [design](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) [patterns](https://en.wikipedia.org/wiki/Software_design_pattern) on [Android](https://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/). So I was very interested in applying these concepts here, if anything because our client was interested in continuing this project with a second Senior Design group after we were done and I wanted to "keep the room clean" for them.
+
+ Then came justifying some of these decisions to the other team members. A few had pretty obvious benefits, like using a [strategy pattern](https://en.wikipedia.org/wiki/Strategy_pattern) to hotswap different sensor strategies depending on a phone's capabilities. Other things, like [Model-View-Presenter (MVP)](https://antonioleiva.com/mvp-android/), I don't think I was able to explain as well at the time. One of the biggest issues I ran into with trying to decipher MVP was how many slight variations there were. It seemed like there was no canonical version of it to learn first. Granted that proved to be a huge benefit, as we were able to tailor our usage of MVP to our own skill level. Finding the right balance between trying out new technologies vs the familiarity needed to get things done is probably my biggest takeaway from this project.
