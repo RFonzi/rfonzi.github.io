@@ -748,8 +748,6 @@ body {
 
 img {
   max-width: 100%;
-  margin: auto;
-  display: block;
 }
 
 a {
@@ -923,7 +921,10 @@ pre code {
 }
 
 img.post-image, img.page-img {
-  width: 100%;
+  max-width: 100%;
+  min-width: 40%;
+  margin: auto;
+  display: block;
 }
 
 .page-content {
