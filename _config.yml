@@ -26,9 +26,7 @@ paginate: 5
 paginate_path: /projects/page:num/
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-    extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
+markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-paginate
