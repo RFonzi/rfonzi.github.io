@@ -7,13 +7,9 @@ description: Exercise At Home is an Android app designed to give patients who ne
 categories: projects
 ---
 
-Exercise At Home is an Android app designed to give patients who need physical
-therapy...
+Exercise At Home is an Android app designed to motivate patients who need physics therapy.
 
-:open_hands: **motivation** :open_hands:
-
-
-To accomplish this, Exercise At Home employs stat tracking and gamification elements. Exercises are performed live in-app, with the help of :loud_sound: **voice narration** :loud_sound: and :ok_woman: **range-of-motion** :ok_woman: measurements acquired through various sensor fusion algorithms.
+To accomplish this, Exercise At Home employs stat tracking and gamification elements. Exercises are performed live in-app, with the help of **voice narration** and **range-of-motion** measurements acquired through various sensor fusion algorithms.
 
 <img style="float: left; width: 30%; margin-right: 1em;" src="https://lh3.googleusercontent.com/oNxWjxefGsvomuKdO3GvCCAJp4YBwRwVIo8XVfjZ0sO6EOYouH38gOccNV52TyRhwjs_=h900-rw" />
 
@@ -42,7 +38,7 @@ We self-assigned two people to work on the web backend, and two people, includin
 <img style="float: right; width: 30%; margin-left: 1em; margin-top: 1em" src="https://lh3.googleusercontent.com/c9uKn36dXnUX-Hd1QKQn1Jb_oa3N3CjDb5U2uBzQYhfhlKnpXVPm4GzXxFAg4MvqOg=h900-rw" />
 I gradually took charge of design for both the presentation layer and parts of the UI itself, and influenced much of the business logic present.
 
-The app follows an MVP architecture with various interactors and repositories to fulfill use cases. We also employ drop-in strategies for the sensor measurements utilizing different combinations of sensors to help work around <sup><sub><sub>Samsung</sub></sub></sup> phones with absent or wonky accelerometers or gyroscopes.
+The app follows an MVP architecture with various interactors and repositories to fulfill use cases. We also employ drop-in strategies for the sensor measurements utilizing different combinations of sensors to help work around certain phones with absent or wonky accelerometers or gyroscopes.
 
 ## Retrospective
  This was the first _real_ Android app I've worked on, and around the same time I was reading into [architectural](https://en.wikipedia.org/wiki/Architectural_pattern) [design](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) [patterns](https://en.wikipedia.org/wiki/Software_design_pattern) on [Android](https://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/). So I was very interested in applying these concepts here, if anything because our client was interested in continuing this project with a second Senior Design group after we were done and I wanted to "keep the room clean" for them.
